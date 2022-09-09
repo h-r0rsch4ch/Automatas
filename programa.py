@@ -34,3 +34,6 @@ etiquetaResultado = ttk.Label(text="")
 etiquetaResultado.place(x=22, y=130)
 
 ventana.mainloop()
+
+# (1|2|4|6|7|9)+(l|u|i|s|j|a|n|r|m|o|c|t|ñ|e|d|1|2|4|6|7|9|ljrc)*(\.?)(l|u|i|s|j|a|n|r|m|o|c|t|ñ|e|d|1|2|4|6|7|9|ljrc)*\.1946217
+
