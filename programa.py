@@ -5,7 +5,7 @@ import re
 
 # Validacion de la cadena
 def validacionCadena():
-    regex = re.compile(r"[A-Za-z0-9]+")
+    regex = re.compile(r"[1|2|4|6|7|9]+[l|u|i|s|j|a|n|r|m|o|c|t|ñ|e|d|1|2|4|6|7|9|ljrc]*[\.?][l|u|i|s|j|a|n|r|m|o|c|t|ñ|e|d|1|2|4|6|7|9|ljrc]*[\.1946217]")
     cadena = str(inputCadena.get())
     if re.fullmatch(regex, cadena):
         etiquetaResultado.config(text=f"La cadena {cadena} es valida.")
@@ -34,6 +34,3 @@ etiquetaResultado = ttk.Label(text="")
 etiquetaResultado.place(x=22, y=130)
 
 ventana.mainloop()
-
-# (1|2|4|6|7|9)+(l|u|i|s|j|a|n|r|m|o|c|t|ñ|e|d|1|2|4|6|7|9|ljrc)*(\.?)(l|u|i|s|j|a|n|r|m|o|c|t|ñ|e|d|1|2|4|6|7|9|ljrc)*\.1946217
-
